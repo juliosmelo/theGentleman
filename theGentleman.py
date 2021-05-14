@@ -39,11 +39,10 @@ def get_sqlmap_cmds(log_file) -> list():
     requests = []
     for f in log_file.stream():
         for _ in f.request.headers:
-            if f.request.host == sys.argv[2]:
-                if f.request.method == "GET":
-                    requests.append(mount_get_requests(f.request))
-                if f.request.method == ("PUT" or "POST"):
-                    requests.append(mount_post_and_put_cmd(f.request))
+            if f.request.method == "GET":
+                requests.append(mount_get_requests(f.request))
+            if f.request.method == ("PUT" or "POST"):
+                requests.append(mount_post_and_put_cmd(f.request))
     return requests
 
 def main():

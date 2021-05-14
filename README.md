@@ -6,10 +6,12 @@
  \__|_| |_|\___|  \____|\___|_| |_|\__|_|\___|_| |_| |_|\__,_|_| |_|
 ```
 
-CLI to speed up SQLi with using [mitmproxy](https://mitmproxy.org/) and [sqlmap](https://github.com/sqlmapproject/sqlmap)
+CLI to speed up SQLi using [mitmproxy](https://mitmproxy.org/) and [sqlmap](https://github.com/sqlmapproject/sqlmap)
 
-Requirements
+Requirements:
+
 [mitmproxy](https://mitmproxy.org/)
+
 [sqlmap](https://github.com/sqlmapproject/sqlmap)
 
 # How to use
